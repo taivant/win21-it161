@@ -1,0 +1,164 @@
+/* BIG Website */
+
+html {
+    background-color: #ccc;
+}
+
+main {
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+
+h1, h2, p {
+    padding:0 16px;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    border: 1px solid #000;
+}
+
+div.gallery {
+    text-align: center;
+}
+
+figure {
+    display: inline-block;
+    margin: .25%;
+}
+
+section {
+    float: left;
+    width: 64%;
+}
+
+aside {
+    float: right;
+    width: 34%;
+}
+
+footer {
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+
+
+.fullwidth {
+    width: 100%;
+}
+
+.no-bullets {
+    list-style-type: none;
+}
+
+ /* START - EMBED RESPONSIVELY STYLES */
+
+.embed-container { 
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0; 
+        overflow: hidden; 
+        max-width: 100%; 
+} 
+
+.embed-container iframe {
+        position: absolute; 
+        top: 0; 
+        left: 0;
+        width: 100%; 
+        height: 100%; 
+}
+
+ /* END - EMBED RESPONSIVELY STYLES */
+
+ /* HIDE AGENDA VIEW CALENDAR */
+div.embed-container.agenda-view {
+    display: none;
+}
+
+/* DESKTOP STYLES */
+
+@media all and (max-width: 1400px) {
+    
+    section {
+        float: left;
+        width: 65%;
+    }
+
+    aside {
+        float: right;
+        width: 30%;
+    }
+    
+    img.tablet, img.phone {
+        display: none;
+    }
+    
+}
+
+/* DESKTOP STYLES */
+
+@media all (min-width: 601px) and (max-width: 1399px) {
+    
+    main {
+        width: 90%
+    }
+    
+    section {
+        float: left;
+        width: 55%;
+    }
+
+    aside {
+        float: right;
+        width: 40%;
+    }
+    
+    img.desktop, img.phone {
+        display: none;
+    }
+    
+}
+
+/* CALENDAR RULES for PHONE */
+@media all and (max-width: 1118px) {
+    /* Show Agenda View Calendar */
+    div.embed-container.agenda-view{
+        display: block;
+    }
+    /* Hide Month View Calendar */
+    div.embed-container.month-view{
+        display: none;
+    }
+}
+
+/* MOBILE STYLES */
+
+@media all and (max-width: 600px) {
+   
+    main {
+        width: 100%;
+    }
+    
+    section {
+        float: none;
+        width: 100%;
+    }
+
+    aside {
+        float: none;
+        width: 100%;
+    }
+    
+    img.desktop, img.tablet {
+        display: none;
+    }
+    
+}

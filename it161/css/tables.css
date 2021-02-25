@@ -1,0 +1,42 @@
+table {
+    border:1px solid #000;
+    width:80%;
+    border-collapse: collapse;
+    margin:auto;
+    background-color:#f3e5dc;
+    color:darksalmon;
+    border-color: cadetblue;
+}
+
+tr {
+  vertical-align:top;
+}
+
+td,th {
+  border:1px dotted cadetblue;
+  padding:.5em;
+}
+
+table.client {
+    margin:40px auto; /* T R B L */
+}
+
+table.client th {
+    text-align: left;
+    width:30%;
+   
+
+}
+
+table.audience th {
+    margin:40px auto; /* T R B L */
+
+}
+
+table.audience th{
+    width:33.3%;
+}
+
+th{
+    color:#d95e3d
+}
