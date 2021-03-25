@@ -1,0 +1,265 @@
+/* FP Website */
+
+html {
+    background-color: #f7d6dd;
+}
+
+.header {
+    height: 9.5em;
+}
+
+.logo {
+    border: none;
+    margin-bottom: -1em;
+    margin-top: -.5em;
+    margin-left: 0;
+    height: 150px;
+    width: 150px;
+    padding-left: 1%;
+    margin-right: 0;
+    box-sizing: content-box
+    
+}
+
+main {
+    background-color: #fff4fd;
+    margin: auto;
+    overflow: auto;
+}
+
+h2, p {
+    padding:0 16px;
+    color:#c46c80;
+}
+
+a {
+    text-decoration:none;
+    color:#c46c80;
+}
+
+h3, h4 {
+    color:#c46c80;
+}
+
+.login-signup {
+    float: right;
+    padding-right: 2em;
+    padding-top: 5em;
+    font-size: .9em;
+}
+.pageid {
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.results, .forums {
+    text-align: left;
+}
+
+img {
+    border: 1px solid #000;
+    float:left;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 2em;
+    width: 250px;    
+}
+
+.facts {
+    overflow: hidden;
+    
+}
+.forums {
+    margin-left: 1em;
+}
+
+.results {
+    margin-left: 1em;
+}
+
+.intro {
+    overflow: hidden;
+}
+
+.adopt {
+    overflow: hidden;
+}
+
+.adoptcat {
+    float: left;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.subheader1 {
+    padding-bottom: 1em;
+}
+
+.subheader2 {
+    padding-bottom: 1em;
+    
+}
+.subsubheader {
+    margin-left: 1em;
+    text-align: left;
+}
+
+aside {
+    padding: 10px;
+    
+}
+
+.side {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+div.gallery {
+    text-align: center;
+    width:100%;
+}
+
+figure {
+    display: inline-block;
+    margin: .25%;
+}
+
+footer {
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+
+
+.fullwidth {
+    width: 100%;
+}
+
+.no-bullets {
+    list-style-type: none;
+}
+
+ /* START - EMBED RESPONSIVELY STYLES */
+
+.embed-container { 
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0; 
+        overflow: hidden; 
+        max-width: 100%; 
+} 
+
+.embed-container iframe {
+        position: absolute; 
+        top: 0; 
+        left: 0;
+        width: 100%; 
+        height: 100%; 
+}
+
+ /* END - EMBED RESPONSIVELY STYLES */
+
+
+
+ /* HIDE AGENDA VIEW CALENDAR */
+div.embed-container.agenda-view {
+    display: none;
+}
+
+
+/* CALENDAR RULES for PHONE */
+@media all and (max-width: 1118px) {
+    /* Show Agenda View Calendar */
+    div.embed-container.agenda-view{
+        display: block;
+    }
+    /* Hide Month View Calendar */
+    div.embed-container.month-view{
+        display: none;
+    }
+}
+
+
+
+/* LARGE DESKTOP STYLES */
+
+@media all and (min-width: 1600px) {
+    
+    main {
+        width: 90%;
+    }
+    section {
+        float: left;
+        width: 60%;
+    }
+
+    aside {
+        float: right;
+        width: 35%;
+    }
+
+}
+
+/* DESKTOP STYLES */
+
+@media all and (min-width: 1024px) and (max-width: 1599px) {
+    
+    main {
+        width: 90%;
+    }
+    section {
+        float: left;
+        width: 60%;
+    }
+
+    aside {
+        float: right;
+        width: 35%;
+    }
+    
+}
+
+
+/* Tablet STYLES */
+
+@media all and (min-width: 601px) and (max-width: 1023px) {
+    
+    main {
+        width: 95%
+    }
+    
+    section {
+        float: none;
+        width: 100%;
+    }
+
+    aside {
+        float: none;
+        width: 100%;
+    }
+    
+}
+
+/* MOBILE STYLES */
+
+@media all and (max-width: 600px) {
+   
+    main {
+        width: 95%;
+    }
+    
+    section {
+        float: none;
+        width: 100%;
+    }
+
+    aside {
+        float: none;
+        width: 100%;
+    }
+    
+}
+
